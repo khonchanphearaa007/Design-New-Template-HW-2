@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanuman:wght@100..900&family=Koulen&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-color-white: #fff;
+  --bg-color: crimson;
+  --text-color-hover: crimson;
+
+  --bg-blue: blue;
+  --bg-orange: orange;
+  --bg-green: #38C378;
+}
+body {
+  font-family: "Koulen", sans-serif;
+  background-color: #eee;
+  height: 200vh;
+}
+h1,
+h2,
+h3,
+h4,
+span,
+p {
+  font-family: "Hanuman", serif;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+header {
+  background-color: black;
+}
+/* image-logo */
+.image-logo img {
+  width: 80px;
+  padding: 10px 0;
+}
+
+/* navbar */
+nav {
+  background-color: var(--bg-color);
+  position: sticky;
+  top: 0;
+  z-index: 15;
+}
+.navbar .navbar-nav {
+  list-style-type: none;
+  display: flex;
+}
+.navbar .navbar-nav .navbar-item .navbar-link {
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  font-size: 19px;
+  color: #eee;
+  opacity: 0.8;
+}
+.navbar .navbar-nav .navbar-item:first-child > .navbar-link {
+  opacity: 1;
+  background-color: rgb(245, 31, 31);
+}
+.navbar .navbar-nav .navbar-item .navbar-link:hover {
+  opacity: 1;
+}
+
+/*  */
+.section-news {
+ margin-top: 25px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline: -20px;
+}
+.col-3 {
+  width: calc(100% / 12 * 3);
+  padding-inline: 20px;
+}
+.col-4 {
+  width: 33.33333333333333%;
+}
+.col-5 {
+  width: 41.66666666666667%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: calc(100% / 12 * 7);
+  padding-left: 20px;
+}
+.col-8 {
+  width: 66.66666666666667%;
+}
+.col-9 {
+  /* width: 75% ; */
+  width: calc(100% / 12 * 9);
+  padding-inline: 20px;
+}
+.col-10 {
+  width: 83.33333333333333%;
+}
+.col-11 {
+  width: 91.66666666666667%;
+}
+.col-12 {
+  width: 100%;
+}
+
+.card-news {
+  width: 100%;
+  height: 300px;
+  background-color: gold;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card-news img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  background-position: center;
+}
+.card-news .color-dark {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+.card-news h2 {
+  position: absolute;
+  top: 55%;
+  padding: 20px;
+  color: #fff;
+  font-size: 22px;
+  transition: 0.4s;
+}
+.card-news span {
+  position: absolute;
+  top: 65%;
+  color: #fff;
+  padding: 20px;
+  opacity: 0;
+  transition: 0.4s;
+}
+.card-news .date p {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  color: var(--text-color-white);
+  bottom: 10px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 14px;
+}
+.path {
+  padding: 6px 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  color: var(--text-color-white);
+}
+.card-news:hover h2 {
+    top: 35%;
+    color: var(--text-color-hover);
+}
+.card-news:hover span {
+  top: 55%;
+  opacity: 1;
+}
+.card-news:hover .color-dark {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+}
+
+.ads{
+   width: 100%;
+   height: 100%;
+}
+.ads .bg-ads-news-right {
+    width: 100%;
+    height: 98%;
+    background-color: lightgray;
+}
+.center {
+  width: 100%;
+  height: 2%;
+}
+
+.section-technology{
+    padding-top: 60px;
+}
+.box-technology{
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    border-top: 2px solid dodgerblue;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.section-title{
+    width: 130px;
+    height: 40px;
+    background-color: dodgerblue;
+    font-size: 18px;
+    font-family: khmer os content;
+    color: #fff;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.section-title::after{
+    width: 0;
+    height: 0;
+    content: '';
+    border-style: solid;
+    border-width: 40px 0 0 30px;
+    border-color: transparent transparent transparent dodgerblue;
+    transform: rotate(0deg);
+    position: absolute;
+    left: 130px;
+}
